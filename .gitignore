@@ -1,0 +1,24 @@
+# Object files
+*.o
+*.obj
+
+# Libraries
+*.a
+*.so
+*.dll
+
+# Executables
+*.exe
+*.out
+
+# Build
+build/
+bin/
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc

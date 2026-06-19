@@ -114,7 +114,7 @@ int main(void)
 
     ui_draw_window(&main_window);
     ui_draw_window(&Monitor_window);
-//    ui_draw_window(&reg_window);
+    ui_draw_window(&reg_window);
     ui_draw_window(&memory_window);
 
     //==========================================================
@@ -134,13 +134,13 @@ int main(void)
     	Monitor_window.y,
     	Monitor_window.title
     );
-/*
+
     ui_draw_title(
         reg_window.x,
         reg_window.y,
         reg_window.title
     );
-*/
+
     ui_draw_title(
         memory_window.x,
         memory_window.y,
@@ -155,7 +155,7 @@ int main(void)
     {
         "AX",
         "AX: 1F20",
-        4,
+        34,
         5
     };
 
@@ -163,7 +163,7 @@ int main(void)
     {
         "BX",
         "BX: 00FF",
-        4,
+        34,
         6
     };
 
@@ -171,7 +171,7 @@ int main(void)
     {
         "CX",
         "CX: A012",
-        4,
+        34,
         7
     };
 
@@ -179,7 +179,7 @@ int main(void)
     {
         "DX",
         "DX: 7C00",
-        4,
+        34,
         8
     };
 
@@ -187,7 +187,7 @@ int main(void)
     {
         "PC",
         "PC: 0100",
-        4,
+        34,
         10
     };
 
@@ -195,7 +195,7 @@ int main(void)
     {
         "SP",
         "SP: FFFE",
-        4,
+        34,
         11
     };
 
@@ -218,13 +218,13 @@ int main(void)
 
     ansi_set_text_color(ANSI_FG_BRIGHT_YELLOW);
 
-    ui_set_cursor(30, 5);
+    ui_set_cursor(34, 5);
     printf("0000-03FF");
 
-    ui_set_cursor(30, 6);
+    ui_set_cursor(34, 6);
     printf("0400-07FF");
 
-    ui_set_cursor(30, 7);
+    ui_set_cursor(34, 7);
     printf("0800-0BFF");
 
     ui_set_cursor(30, 8);
